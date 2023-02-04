@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #05c0ab;
+}
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    font-family: fantasy;
+    padding-top: 50px;
+}
+
+hr{
+    background-color: #000000;
+    height: 5px;
+    border: 2px solid #000
+}
+
+/*linea de colores - inicio*/
+
+#line{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    
+}
+
+/*linea de colores - fin*/
+
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    background: #fff;
+    border: 5px solid #000;
+    margin: 10px;
+    background-image: url(img/logo/logo%20marema.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    text-shadow: 5px 5px 5px #fff;
+}
+
+.box:hover{
+    border: 5px dashed #fff;
+/*    border: 5px dashed linear-gradient(#d51010, #d58610, #f1e71c, #67f01d, #1df0db,#1d59f0, #b11df0, #f01dc6, #f01d52);*/
+    flex-grow: 1;
+    transition: 1s;
+    border-radius: 3%;
+}
+
+#box0{
+    background-image: url(img/consola-juegos.de-mano-400.juegos.webp)
+}
+
+
+.box h3{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 30px;
+    background-color: rgba( 255, 255, 255, 0.75 );
+}
+/*secccion botones*/
+
+.botones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+/*    background-color: #197a3e;*/
+
+}
+.botones a{
+    text-decoration: none;
+/*    background-color: firebrick;*/
+}
+.botones img{
+    width: auto;
+    height: 100px;
+    width: 100%;
+/*    background-color: blueviolet;*/
+
+}
+.botones h4{
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+/*    background-color: dodgerblue;*/
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: #fff;
+}
+
+/*fin de seccion de botones*/
+
+/*footer inicio*/
+
+footer{
+    height: auto;
+    width: 100%;
+   /* background: #356868;*/
+    background: #0a0a0a;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #0cd8a5;
+    
+}
+
+footer h6{
+    margin: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    font-variant: small-caps
+}
+iframe{
+    color: aqua;
+}
+.icon{
+    height: 25px;
+    width: auto;
+}
+.copy{
+    color: #2dbcbc;
+    font-size: 22px;
+    
+    
+}
+
+/*footer fin*/

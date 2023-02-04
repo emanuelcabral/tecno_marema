@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&display=swap');
+
+
+@font-face {
+font-family: 'Luckiest guy';
+src: url("fuentes/LuckiestGuy-Regular.ttf")
+}
+
+@font-face {
+font-family: 'Fredoka One';
+src: url("fuentes/FredokaOne-Regular.ttf")
+}
+
+
+/**************************************preloader-inicio*********************************************************/
+/********************************************************************************/
+/********************************************************************************/
+/********************************************************************************/
+/********************************************************************************/
+
+
+#background{
+  display:block;
+  position:fixed;
+  width:100%;
+  height:100%;
+/*  background-color: #3c005b;*/
+  background-color: #05c0ab;
+  background: -webkit-radial-gradient(center, ellipse cover, #05c0ab 1%,#0d0011 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #05c0ab 1%,#0d0011 100%);
+  background: -ie-radial-gradient(center, ellipse cover, #05c0ab 1%,#0d0011 100%);
+  z-index: 10;
+}
+
+#logocontainer{
+  display:block;
+  position:fixed;
+  top:50%;
+  left:50%;
+  width:34vh;
+  height:34vh;
+  margin-left:-17vh;
+  margin-top:-17vh;
+  overflow:hidden;
+  transition:background-color 500ms;
+  cursor:pointer;
+  z-index: 10;
+}
+
+
+#pelogo{
+  display: block;
+  position: absolute;
+  left: 2vh;
+  top: 2vh;
+  width: 30vh;
+  height: 30vh;
+  background: #34324b;
+  background: -moz-linear-gradient(-45deg, #34324b 0%, #161222 100%);
+  background: -webkit-linear-gradient(-45deg, #34324b 0%,#161222 100%);
+  background: linear-gradient(135deg, #34324b 0%,#161222 100%);
+  background-size: contain;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 15vh;
+  font-weight: bold;
+  color: #05c0ab;
+  text-align: center;
+  line-height: 30vh;
+  z-index: 10;
+}
+
+#pelogo br{
+/*    display: block;*/
+}
+
+.loader{
+  display:block;
+  position:absolute;
+  background-color:#05c0ab;
+}
+
+#logo-caption{
+    text-align: center;
+    color: #05c0ab;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 15px;
+    font-variant: small-caps;
+    display: block;
+    justify-content: center;
+    position: absolute;
+    top: 220px;
+}
+/*Pretty complex animation, so each side needs its own @keyframes.*/
+
+@keyframes slide1{
+  50%{width:32vh; margin-left:0;}
+  100%{margin-left:32vh;}
+}
+
+@keyframes slide2{
+  50%{height:32vh; margin-top:0;}
+  100%{margin-top:32vh;}
+}
+
+@keyframes slide3{
+  50%{width:32vh; margin-right:0;}
+  100%{margin-right:32vh;}
+}
+
+@keyframes slide4{
+  50%{height:32vh; margin-bottom:0}
+  100%{margin-bottom:32vh;}
+}
+/********************************************************************************/
+/********************************************************************************/
+/********************************************************************************/
+
+
+/**************************************preloader-fin************************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #05c0ab;
+}
+.barra1{
+    display: flex;
+    justify-content: center;
+    
+}
+.barra_med{
+    width: 100%;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+/*    font-family: 'Londrina Solid', cursive;*/
+    text-transform: capitalize;
+    text-shadow: 2px 10px 2px #000;
+    color: #ffffff;
+    
+}
+h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Fredoka One',cursive;
+    font-variant: small-caps;
+    color: #000;
+    text-shadow: 2px 5px 2px #e2e2e2;
+}
+hr{
+    width: 100%;
+    margin: auto;
+    height: 3px;
+    background: #070707;
+    
+}
+/*barra de menu-inicio*/
+
+.menu{
+    min-height: 80px;
+/*    background:  #356868;*/
+    background-color: #ec5555;
+    color: #fff;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu  li{
+    font-size: 40px;
+    font-variant: small-caps;
+    padding: 10px;
+    font-family: fantasy;
+    background-color: #ec5555;
+    padding-bottom: 2px;
+    margin: 5px;
+    
+    
+}
+.menu li:hover{
+    color: #fffb00;
+    transition: 0.5s;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-style: dashed;
+    text-decoration-skip: spaces;
+}
+
+.main-icon{
+    display: none;
+}
+
+@media (max-width: 640px) {
+/*
+  .menu ul {
+      display: block;
+    }
+*/
+    .main-icon{
+        display: flex;
+        justify-content: flex-end;
+        background-color: #ec5555;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .main-icon1{
+        background-image: url(main/menu0.svg);
+        height: 40px;
+        width: 40px;
+        background-size: cover;
+    }
+    
+    .main-icon1:hover{
+        height: 40px;
+        width: 40px;
+        background-image: url(main/menu2.svg);
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    .main-icon2{
+        background-image: url(main/cancel1.svg);
+        height: 40px;
+        width: 40px;
+        background-size: cover;
+        display: none;
+    }
+    
+    .main-icon2:hover{
+        height: 40px;
+        width: 40px;
+        background-image: url(main/cancel2.svg);
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    .menu{
+        position: relative;
+        left: -99%;
+        display: none;
+    }
+    .menu:hover{
+        position: relative;
+        left: 0px;
+        transition: 1s;
+    }
+    .menu .main-list{
+        background-color: aqua;
+        display: block;
+    
+    }
+}
+
+/*barra de menu-fin*/
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    font-family: fantasy;
+    padding-top: 50px;
+}
+
+hr{
+    background-color: #000000;
+    height: 5px;
+    border: 2px solid #000
+}
+
+/*linea de colores - inicio*/
+
+#line{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    
+}
+
+/*linea de colores - fin*/
+
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    background: #fff;
+    border: 5px solid #000;
+    margin: 10px;
+    background-image: url(img/logo/logo%20marema.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    text-shadow: 5px 5px 5px #fff;
+}
+
+.box:hover{
+    border: 5px dashed #fff;
+/*    border: 5px dashed linear-gradient(#d51010, #d58610, #f1e71c, #67f01d, #1df0db,#1d59f0, #b11df0, #f01dc6, #f01d52);*/
+    flex-grow: 1;
+    transition: 1s;
+    border-radius: 3%;
+}
+
+#box0{
+    background-image: 
+}
+
+#box1{
+    background-image: url(img/insumos/almacenamiento/discos-estado-solido.jpg);
+}
+
+#box2{
+    background-image: url(img/insumos/auricular.jpg);
+}
+#box3{
+    background-image: url(img/insumos/bases-de-notebook/base-para-notebook2.jpg)
+}
+#box4{
+    background-image: url(img/insumos/cables/cables.jpg)
+}
+#box5{
+    background-image: url(img/insumos/cargadores/cargadores.jpeg)
+}
+#box6{
+    background-image: url(img/insumos/conectividad/conectividad.jpeg)
+}
+#box7{
+    background-image: url(img/insumos/consolas/consolas.jpg)
+}
+#box8{
+    background-image: url(img/insumos/fuentes/fuente-atx.jpg)
+}
+#box9{
+    background-image: url(img/insumos/home-living/aspiradora-robots/aspiradora-robot.webp)
+}
+#box10{
+    background-image: url(img/insumos/joysticks/joystick%20para%20celular.jpg)
+}
+#box11{
+    background-image: url(img/insumos/luces/arodeluz.jpg)
+}
+#box12{
+    background-image: url(img/insumos/mochila/mochila.jpg)
+}
+#box13{
+    background-image: url(img/insumos/mouse/mouse.jpg)
+}
+#box14{
+    background-image: url(img/insumos/para-ellas/cepillo-alisador/cepillo%20alisador.jpg)
+}
+#box15{
+    background-image: url(img/insumos/parlantes/parlante-ducha.jpg)
+}
+#box16{
+    background-image: url(img/insumos/smart-bands/reloj%20smart%20band%20m5.webp)
+}
+#box17{
+    background-image: url(img/insumos/soportes/tripode.webp)
+}
+#box18{
+    background-image: url(img/insumos/teclado-1.png)
+}
+#box19{
+    background-image: url(img/insumos/tv-box/tvbox.webp)
+}
+
+.box h3{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 30px;
+    background-color: rgba( 255, 255, 255, 0.75 );
+}
+/*secccion botones*/
+
+.botones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+/*    background-color: #197a3e;*/
+    margin-bottom: 70px;
+
+}
+.botones a{
+    text-decoration: none;
+/*    background-color: firebrick;*/
+}
+.botones img{
+    width: auto;
+    height: 100px;
+    width: 100%;
+/*    background-color: blueviolet;*/
+
+}
+.botones h4{
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+/*    background-color: dodgerblue;*/
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: #fff;
+}
+
+/*fin de seccion de botones*/
+
+/*footer inicio*/
+
+footer{
+    height: auto;
+    width: 100%;
+   /* background: #356868;*/
+    background: #0a0a0a;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #0cd8a5;
+    
+}
+
+footer h6{
+    margin: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    font-variant: small-caps
+}
+iframe{
+    color: aqua;
+}
+.icon{
+    height: 25px;
+    width: auto;
+}
+.copy{
+    color: #2dbcbc;
+    font-size: 22px;
+    
+    
+}
+
+/*footer fin*/
+
+/*************BOTON ARRIBA inicio*********************/
+.btn-arriba {
+    background: #ec5555;
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    bottom: 120px;
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    border-radius: 0px;
+    border: 3px solid #000;
+    cursor: pointer;
+    font-family: cursive;
+/*    border-image: url(img/bgnd.gif);*/
+    box-shadow: 0px 0px 20px #fff;
+}
+
+@media (max-width: 640px) {
+  .btn-arriba {
+    right: 10px;
+    bottom: 120px;
+    border-radius: 120px;
+    border: 3px solid #000;
+  }
+}
+/*************BOTON ARRIBA fin*********************/
+
+/************ESTILO DE BARRA DE DESPLAZAMIENTO inicio****************/
+/************************TEXTAREA*****************************/
+/******************CHROME*************************/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #333;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  background-color: #ec5555;
+}
+
+/*******************MOZILA****************************/
+::-moz-scrollbar-track {
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-moz-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-moz-scrollbar-thumb {
+  border-radius: 10px;
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ec5555;
+}
+
+/*******************OPERA*******************************/
+::-o-scrollbar-track {
+  -o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-o-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-o-scrollbar-thumb {
+  border-radius: 10px;
+  -o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ec5555;
+}
+
+/*******************EXPLORER*******************************/
+::-ms-scrollbar-track {
+  -ms-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-ms-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-ms-scrollbar-thumb {
+  border-radius: 10px;
+  -ms-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ec5555;
+}
+
+/****************************************************************/
+
+/************ESTILO DE BARRA DE DESPLAZAMIENTO fin****************/

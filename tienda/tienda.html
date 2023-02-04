@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuestra tienda</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png"  href="img/logo/logo%20marema.jpg">
+    
+        <!------------------------ETIQUETAS META---------------------------------------------->
+<!--   descripcion en el buscador-->
+    <meta name="description" content="tecno marema tecnologia presente en tu hogar, Armado Y Reparación De Pc, Instalación Y Actualización De Sistemas, Instalación De Programas y videojuegos, Limpieza Y Mantenimiento, Formateos, Antivirus, Back-Ups, Instalación De Redes Y Camaras, Insumos, Asistencia De Forma Remota Y Presencial, encontra todo lo que necesitas en nustra tienda online. aceptamos mercado pago transferencias bancarias o mercado point/ codigo qr">
+<!--    -->
+    
+    <meta name="keywords" content=" tecno marema, tecnologia presente en tu hogar, Armado Y Reparación De Pc, Instalación Y Actualización De Sistemas, Instalación De Programas y videojuegos, Limpieza Y Mantenimiento, Formateos, Antivirus, Back-Ups, Instalación De Redes Y Camaras, Insumos, Asistencia De Forma Remota Y Presencial, encontra todo lo que necesitas en nustra tienda online. aceptamos mercado pago transferencias bancarias o mercado point/ codigo qr, ubicados en  buenos aires, argentina ">
+    <meta name="author" content="tecno marema">
+<!-- titulo y descripcion a la hora de compartir   -->
+    <meta name="title" content="Tecno Marema - tecnologia presente en tu hogar">
+    <meta name="description" content="tecno marema, tecnologia presente en tu hogar, Armado Y Reparación De Pc, Instalación Y Actualización De Sistemas, Instalación De Programas y videojuegos, Limpieza Y Mantenimiento, Formateos, Antivirus, Back-Ups, Instalación De Redes Y Camaras, Insumos, Asistencia De Forma Remota Y Presencial, encontra todo lo que necesitas en nustra tienda online. aceptamos mercado pago transferencias bancarias o mercado point/ codigo qr, ubicados en buenos aires, argentina">
+<!--    -->
+    
+    <meta name="keywords" content="tecno marema, tecnologia presente en tu hogar, Armado Y Reparación De Pc, Instalación Y Actualización De Sistemas, Instalación De Programas y videojuegos, Limpieza Y Mantenimiento, Formateos, Antivirus, Back-Ups, Instalación De Redes Y Camaras, Insumos, Asistencia De Forma Remota Y Presencial, encontra todo lo que necesitas en nustra tienda online. aceptamos mercado pago transferencias bancarias o mercado point/ codigo qr, buenos aires, argentina">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="ROBOTS" content="ALL">
+    <meta name="revisit-after" content="5 Days">
+    <meta name="language" content="Spanish">
+    <meta http-equiv="Content-Language" content="Es">
+    <meta name="distribution" content="Global">
+    <meta name="city" content="Buenos Aires">
+    <meta name="country" content="Argentina">
+    <meta name="resource-type" content="Document">
+    <meta name="doc-type" content="Web Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+   <meta name="GOOGLEBOT" content="index, follow, all">
+   <meta name="Resource-type" content="Document">
+   
+   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <!--menu abrir y cerrar-------inicio-->
+    <script>
+        $(document).ready(function(){
+
+        $("#main-icon1").click(function(abrir){
+        //$('.menu').css( 'left', '-99%' );
+        $('.menu').css( 'transition', '1s' , 'ease', '3s' );   
+        $('.menu').css( 'display', 'block' );
+        $('.menu').css( 'left', '0px' );
+        $('#main-icon1').hide();
+        $('#main-icon2').show();
+    // $('.main-icon1').css( 'background-image', 'url("main/cancel1.svg")' );
+    //$('.main-icon1').css( 'background-image', 'url("main/cancel1.svg")' );
+        
+
+	});     
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+
+        $("#main-icon2").click(function(cerrar){
+        $('.menu').css( 'transition', '1s' , 'ease', '3s' );   
+        $('.menu').css( 'display', 'none' );
+        $('.menu').css( 'left', '-1000px' );
+        $('.menu').hide();
+        $('#main-icon2').hide();
+        $('#main-icon1').show();
+        
+
+	});     
+        });
+    </script>
+
+<!--menu abrir y cerrar---------fin--->
+    
+       <script>
+<!-- boton subir - inicio -->
+     $(document).ready(function(){
+ 
+	$('.btn-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 4000);
+	});
+ 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.btn-arriba').slideDown(300);
+		} else {
+			$('.btn-arriba').slideUp(300);
+		}
+	});
+ 
+});  
+<!-- boton subir - fin -->
+   </script>
+   
+<!----------------------------------------------------------preloader-------inicio---------------------------------------------->
+<script>
+
+    var full=false;
+
+function fill(){
+  full=!full;
+  document.getElementById("logocontainer").style.backgroundColor=full?"#05c0ab":"transparent";
+}
+    
+</script>
+<!---->
+
+<script type="text/javascript">
+$(window).load(function() {
+    setTimeout(function() {
+        $("#background").fadeOut(1000);
+    },2600);
+    
+    setTimeout(function() {
+        $("#pelogo").fadeOut(1000);
+    },2600);
+    
+    setTimeout(function() {
+        $("#logocontainer").fadeOut(1000);
+    },2600);
+ 
+//    setTimeout(function() {
+//        $("#background").fadeIn(1500);
+//    },6000);
+});
+    
+    
+</script>
+<!----------------------------------------------------------preloader-------fin------------------------------------------------>
+   
+   <!-------------------------------------------------------------->
+<!------------eliminar pueblicidad-del host-----inicio---------->
+<script>
+  $(document).ready(function(){
+  $("a[title|='Hosted on free web hosting 000webhost.com. Host your own website for       FREE.']").css("display", "none");
+  $("img[alt|='www.000webhost.com']").css("display", "none");
+  });
+</script>
+<!------------eliminar pueblicidad-del host---fin-------------->
+<!------------------------------------------------------------->
+    
+</head>
+<body>
+   
+<!----------------------------------------------------------preloader--inicio-------------------------------------------------->
+<!-------------------------------------------------------->
+<!----------------------preloader------------------------->
+<!-------------------------------------------------------->
+<div id="background"></div>
+    <div id="logocontainer" onclick=fill()>
+      <div id="pelogo">TM</div>
+      <div id="logo-caption">tecno marema</div>
+      <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
+      <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
+      <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+      <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
+    </div>
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!----------------------------------------------------------preloader--inicio-------------------------------------------------->
+   
+   
+   
+    <header class="barra1" id="barra" >
+    <div class="barra_med">
+    <h1>tienda marema</h1>
+    <h4>accesorios tecnológicos</h4>
+    </div>
+    </header>
+    <br>
+    <hr>
+    
+    <div class="main-icon" id="main-icon">
+    <div class="main-icon1" id="main-icon1"></div><div class="main-icon2" id="main-icon2"></div>
+    </div>
+    <div class="menu">
+<!--        <div class="main-icon"><img class="main-icon1" src="main/menu0.svg" alt=""></div>-->
+    <ul class="main-list" id="main-list">
+        <a href="/#"><li>inicio</li></a>
+        <a href="/#servicios"><li>servicios</li></a>
+        <a href="#"><li>tienda</li></a>
+        <a href="/#contacto"><li>contacto</li></a>
+    
+    </ul>
+        
+    </div>
+<!--    <header class="title" id="title1">Tienda Marema</header>-->
+    <hr>
+<!--    linea de colores - inicio -->
+    <img id="line" src="img/bgnd.gif" alt="">
+<!--linea de colores - fin -->
+    <section class="contenedor" id="con1">
+        
+        <a href="accesorios/accesorios.html"><div class="box" id="box0"><h3>accesorios</h3></div></a>
+        <a href="almacenamiento/almacenamiento.html"><div class="box" id="box1"><h3>almacenamiento</h3></div></a>
+        <a href="auriculares/auriculares.html"><div class="box" id="box2"><h3>auriculares</h3></div></a>
+        <a href=""><div class="box" id="box3"><h3>bases de notebook</h3></div></a>
+        <a href="cables/cables.html"><div class="box" id="box4"><h3>cables</h3></div></a>
+        <a href="cargadores/cargadores.html"><div class="box" id="box5"><h3>cargadores</h3></div></a>
+        <a href="conectividad/conectividad.html"><div class="box" id="box6"><h3>conectividad</h3></div></a>
+        <a href="consolas/consolas.html"><div class="box" id="box7"><h3>consolas</h3></div></a>
+        <a href=""><div class="box" id="box8"><h3>fuentes</h3></div></a>
+        <a href="home-living/home-living.html"><div class="box" id="box9"><h3>home/living</h3></div></a>
+        <a href=""><div class="box" id="box10"><h3>joysticks</h3></div></a>
+        <a href="luces/luces.html"><div class="box" id="box11"><h3>luces</h3></div></a>
+        <a href=""><div class="box" id="box12"><h3>mochilas</h3></div></a>
+        <a href="mouse/mouse.html"><div class="box" id="box13"><h3>mouse</h3></div></a>
+        <a href="para-ellas/ellas.html"><div class="box" id="box14"><h3>para ellas</h3></div></a>
+        <a href=""><div class="box" id="box15"><h3>parlantes</h3></div></a>
+        <a href="smart-bands/smart.html"><div class="box" id="box16"><h3>smart bands</h3></div></a>
+        <a href="soportes/soportes.html"><div class="box" id="box17"><h3>soportes</h3></div></a>
+        <a href="teclados/teclados.html"><div class="box" id="box18"><h3>teclados</h3></div></a>
+        <a href=""><div class="box" id="box19"><h3>tv box</h3></div></a>
+        
+    </section>
+    <section class="botones" id="boton1"><a href="/"><img src="img/botones/home.svg" alt=""><h4>inicio</h4></a></section>
+    <!--    linea de colores - inicio -->
+    <img id="line" src="img/bgnd.gif" alt="">
+<!--linea de colores - fin -->
+    <footer id="pie-de-pagina">
+        <h6><a href="https://www.facebook.com/Tecno-Marema-101512868455212"><img class="icon" src="img/iconos/svg/003-facebook-1.svg" alt=""> facebook: tecno_marema</a></h6>
+        <h6><a href="https://www.gmail.com"><img class="icon" src="img/iconos/svg/007-gmail-1.svg" alt=""> email: tecnomarema1@gmail.com</a></h6>
+        <h6><a href="https://www.instagram.com/tecno_marema/?hl=es-la"><img class="icon" src="img/iconos/svg/001-instagram.svg" alt=""> instagram: @tecno_marema</a></h6>
+        <h6><a href="https://api.whatsapp.com/send?phone=541134110156&text=https%3A%2F%2Fwww.facebook.com%2FTecno-Marema-101512868455212%2F%0A%0AMe+interesa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+Tecno+Marema."><img class="icon" src="img/iconos/svg/005-whatsapp-1.svg" alt=""> whatsapp: 1134110156</a> </h6>
+        
+        
+        <h6 class="copy">todos los derechos reservados por copyright© 2020</h6>
+    </footer>
+    
+    <!---BOTON ARRIBA inicio--->   
+    <div class="btn-arriba"><p>^</p></div>
+<!---BOTON ARRIBA fin --->  
+    
+</body>
+</html>
